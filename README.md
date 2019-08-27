@@ -26,3 +26,11 @@
 ![9](https://user-images.githubusercontent.com/48439116/63788514-3f980600-c913-11e9-87de-b35ef0298c4b.jpg)
 ## After deleting Rachita jain ,new list is:
 ![10](https://user-images.githubusercontent.com/48439116/63788515-3f980600-c913-11e9-8432-ddee3ffb0092.jpg)
+
+#
+## Let update Hari kishan to Hari kishan lal:-
+![11](https://user-images.githubusercontent.com/48439116/63789169-73276000-c914-11e9-8fea-4f933fd2f44f.jpg)
+## updating :
+![12](https://user-images.githubusercontent.com/48439116/63789170-73276000-c914-11e9-8e21-3d41f4a3f69c.jpg)
+## updated output
+![13](https://user-images.githubusercontent.com/48439116/63789171-73bff680-c914-11e9-8f41-db3f9563c3d3.jpg)
