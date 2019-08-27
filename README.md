@@ -34,3 +34,12 @@
 ![12](https://user-images.githubusercontent.com/48439116/63789170-73276000-c914-11e9-8e21-3d41f4a3f69c.jpg)
 ## updated output
 ![13](https://user-images.githubusercontent.com/48439116/63789171-73bff680-c914-11e9-8f41-db3f9563c3d3.jpg)
+#
+#
+# Mobile Views:
+
+![21](https://user-images.githubusercontent.com/48439116/63789705-8424a100-c915-11e9-904b-bf0e9e1b86aa.jpg)
+![22](https://user-images.githubusercontent.com/48439116/63789706-84bd3780-c915-11e9-9552-bea2bdce7276.jpg)
+![23](https://user-images.githubusercontent.com/48439116/63789707-84bd3780-c915-11e9-9747-952e649a15a0.jpg)
+![24](https://user-images.githubusercontent.com/48439116/63789708-84bd3780-c915-11e9-9d7c-2aac87c78572.jpg)
+![25](https://user-images.githubusercontent.com/48439116/63789709-8555ce00-c915-11e9-876e-9b1f34f5cda1.jpg)
