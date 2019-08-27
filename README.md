@@ -9,8 +9,13 @@
 
 
 ![1](https://user-images.githubusercontent.com/48439116/63788505-3e66d900-c913-11e9-92f3-4e8eaea9956a.jpg)
+#
+## Full description by clicking the name bar of employee
 ![2](https://user-images.githubusercontent.com/48439116/63788506-3e66d900-c913-11e9-9704-5e6b2f1067fc.jpg)
 ![3](https://user-images.githubusercontent.com/48439116/63788507-3e66d900-c913-11e9-8c31-bc464bf8a2b0.jpg)
+# 
+## Form for new Employee :
+
 ![4](https://user-images.githubusercontent.com/48439116/63788508-3eff6f80-c913-11e9-95c5-bc500cec39ee.jpg)
 ![5](https://user-images.githubusercontent.com/48439116/63788509-3eff6f80-c913-11e9-98ad-8e27e66ad99c.jpg)
 ![6](https://user-images.githubusercontent.com/48439116/63788510-3eff6f80-c913-11e9-9fe5-f1b186bc6e2d.jpg)
