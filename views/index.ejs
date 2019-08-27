@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>LufyTech DashBoard</title>
+  <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">--> 
+    <link rel="stylesheet" href="stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="home" >
+
+
+    <nav class="nav navbar navbar-expand-md navbar-light fixed-top py-4">
+        <div class="container">
+            <a href="/" class="navbar-brand">
+                <img src="images/logo.jpg" alt="" width="50" height="50">
+                <h3 class="d-inline align-middle">Lufy-Tech</h3>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon">
+
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                            <a href="#" class="nav-link"  data-toggle="modal"
+                            data-target="#contactModal" >Enter New Employee</a>
+                        </li>
+                      
+                </ul>
+            </div>
+        </div>
+
+   
+
+    </nav>
+
+    <section id="about" class=" py-5 text-center bg-light">
+      <div class="container">
+       
+      
+        <div class="row">
+              <div class="col">
+                  <div class="info-header mb-5">
+                      <h1 class="text-primary pb-3">
+                         Employee Dashboard
+                      </h1>
+                      </div>
+                      <% data.forEach(function(el){ %>
+                  <!--Accordian-->
+                  <div id="accordion" role="tablist">
+                      <div class="card">
+                          <div class="card-header" id="heading1">
+                              <h5 class="mb-0 ">
+                                  <div href="#<%=el._id%>" data-toggle="collapse" data-parent="#accordion">
+                              <%= el.first_name %> <%=el.last_name%>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <i class="fas fa-arrow-down"></i>
+                                  </div>
+                              </h5>
+                          </div>
+    
+                          <div id="<%=el._id%>" class="collapse">
+                              <div class="card-body">
+                                <h3 class="text-primary pb-3">
+                                 <%= el.first_name %>&nbsp;&nbsp;<%=el.last_name%>
+                                
+                               </h3>
+                               <p><%= el.title%></p>
+
+<div class="container">
+ 
+    <div class="row">
+    <div class="col-md-12">
+      <div class="panel panel-primary">
+       
+      
+        <table class="table table-hover" id="dev-table">
+          <thead>
+            Full Detail
+          </thead>
+          <tbody>
+            <tr>
+                <th>First Name</th>
+                <th><%= el.first_name%></th>
+            </tr>
+           <tr>
+              <th>Last Name</th>
+              <th><%=el.last_name%></th>
+           </tr>
+           <tr>
+              <th>Email address</th>
+              <th><%=el.email%></th>
+           </tr>
+           <tr>
+                <th>Gender</th>
+                <th><%=el.gender%></th>
+             </tr>
+           <tr>
+              <th>Job Title</th>
+              <th><%=el.title%></th>
+           </tr>
+
+          <tr>
+              <th>Salary</th>
+              <th>Rs.<%=el.salary%>/annum</th>
+          </tr> 
+          <tr>
+              <th>Contact Number:</th>
+              <th>+91-<%=el.phone%></th>
+          </tr>
+          <tr>
+              <th>Marriage Status</th>
+              <th><%=el.Marriage_status%></th>
+          </tr>
+          <tr>
+              <th>Permanent residence</th>
+              <th><%=el.address%></th>
+          </tr>
+           
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    
+    
+  </div>
+  <div class="modal-footer">
+  <form method="GET" action="/users/<%=el._id %>/update">
+    <button class="btn btn-primary">
+        Update
+    </button>
+</form>
+ 
+<form method="POST" action="/users/<%=el._id %>/delete?_method=DELETE">
+    <button class="btn btn-danger">
+        Delete :(
+    </button>
+</form>
+  </div>
+  
+</div>
+                              </div>
+                          </div>
+                      </div>
+                    
+                      
+                  </div>
+                  <% }) %>
+              </div>
+          </div>
+         
+      </div>
+    </section>
+
+
+
+    
+
+    
+<div class="modal fade text-dark" id="contactModal">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="contactModalTitle">Enter New Employee</h5>
+          <button class="close" data-dismiss="modal"><span>&times;</span></button>
+          </div>
+          <div class="modal-body">
+              <form  method="POST" action="/users/enter" >
+                  <div class="form-group">
+                      <label for="name">First Name</label>
+                      <input type="text" class="form-control" name="first">
+                  </div>
+                  <div class="form-group">
+                    <label for="name">Last Name</label>
+                    <input type="text" class="form-control" name="last">
+                </div>
+                  <div class="form-group">
+                          <label for="email">Email</label>
+                          <input type="text" class="form-control" name="email">
+                      </div>
+                      <div class="form-group">
+                            <label for="name">Gender</label>
+                            <select class="form-control" name="gender" id="exampleFormControlSelect1">
+                              <option>Male</option>
+                              <option>Female</option>
+                              <option>Other</option>
+                             
+                            </select>
+                          </div>
+                      <div class="form-group">
+                        <label for="name">address</label>
+                        <input type="text" class="form-control" name="address">
+                    </div>
+                    <div class="form-group">
+                      <label for="name">Phone</label>
+                      <input type="text" class="form-control" name="phone">
+                  </div>
+                  <div class="form-group">
+                    <label for="name">Job Title</label>
+                    <input type="text" class="form-control" name="title">
+                </div>
+                <div class="form-group">
+                  <label for="name">Salary(in Rupees/annum)</label>
+                  <input type="text" class="form-control" name="salary">
+              </div>
+                     
+              <!-- <div class="form-group"> -->
+                <!-- <label for="name">Status</label> -->
+                <!-- <input type="text" class="form-control" name="status"> -->
+
+                <div class="form-group">
+                        <label for="name">Marriage Status</label>
+                        <select class="form-control" name="status" id="exampleFormControlSelect1">
+                          <option >Married</option>
+                          <option>Unmarried</option>
+                          <option>Divorce</option>
+                         
+                        </select>
+                      </div>
+            <!-- </div> -->
+                          <div class="modal-footer">
+                            <button class="btn btn-primary btn-block">
+                                Submit
+                            </button>
+                        </div>
+              </form>
+          </div>
+        
+      </div>
+  </div>
+</div>
+     
+
+
+   
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="javascripts/jquery.min.js"></script>
+  <script src="javascripts/popper.min.js"></script>
+  <script src="javascripts/bootstrap.min.js"></script>
+  <script src="javascripts/navbar-fixed.js"></script>
