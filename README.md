@@ -16,5 +16,8 @@
 ![6](https://user-images.githubusercontent.com/48439116/63788510-3eff6f80-c913-11e9-9fe5-f1b186bc6e2d.jpg)
 ![7](https://user-images.githubusercontent.com/48439116/63788511-3eff6f80-c913-11e9-84d3-6c4aa4935fdd.jpg)
 ![8](https://user-images.githubusercontent.com/48439116/63788512-3f980600-c913-11e9-95b7-2d75bca44f65.jpg)
+![1](https://user-images.githubusercontent.com/48439116/63788505-3e66d900-c913-11e9-92f3-4e8eaea9956a.jpg)
+## Deleting Rachita jain
 ![9](https://user-images.githubusercontent.com/48439116/63788514-3f980600-c913-11e9-87de-b35ef0298c4b.jpg)
+## After deleting Rachita jain ,new list is:
 ![10](https://user-images.githubusercontent.com/48439116/63788515-3f980600-c913-11e9-8432-ddee3ffb0092.jpg)
