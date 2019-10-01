@@ -19,6 +19,8 @@ router.post("/enter",function(req,res,next){
   Employee.create({
       first_name:req.body.first,
       last_name:req.body.last,
+      father_name:req.body.fname,
+      mother_name:req.body.mname,
       email:req.body.email,
       gender:req.body.gender,
       address:req.body.address,
@@ -53,6 +55,8 @@ router.post("/enter",function(req,res,next){
     var obj={
       first_name:req.body.first_name,
       last_name:req.body.last_name,
+      father_name:req.body.fname,
+      mother_name:req.body.mname,
       gender:req.body.gender,
       email:req.body.email,
       address:req.body.address,
