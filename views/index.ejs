@@ -96,6 +96,13 @@
               <th><%=el.last_name%></th>
            </tr>
            <tr>
+            <th>Father's Name</th>
+            <th><%=el.father_name%></th>
+           </tr><tr>
+            <th>Mother's Name</th>
+            <th><%=el.mother_name%></th>
+           </tr>
+           <tr>
               <th>Email address</th>
               <th><%=el.email%></th>
            </tr>
@@ -183,6 +190,14 @@
                     <label for="name">Last Name</label>
                     <input type="text" class="form-control" name="last">
                 </div>
+                <div class="form-group">
+                  <label for="name">Father's Name</label>
+                  <input type="text" class="form-control" name="fname">
+              </div>
+              <div class="form-group">
+                <label for="name">Mother's Name</label>
+                <input type="text" class="form-control" name="mname">
+            </div>      
                   <div class="form-group">
                           <label for="email">Email</label>
                           <input type="text" class="form-control" name="email">
